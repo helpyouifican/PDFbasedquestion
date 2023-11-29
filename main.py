@@ -59,6 +59,7 @@ if uploaded_file is not None:
     Answer the Questions and write Commentary
     Correct Answer: 
     Commentary:
+    Language: {language}
     ---
     TEXT:
     {text}
