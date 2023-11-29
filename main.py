@@ -68,7 +68,7 @@ if uploaded_file is not None:
     ])
 
     chatchain = LLMChain(llm=gpt,prompt=prompt,verbose=True)
-    test=chatchain.run(subject="Korean", Question_num="5", Answer_num="4",language='Korean',text=pages)
+    test=chatchain.run(subject="Korean", Question_num="3", Answer_num="4",language='Korean',text=pages)
     st.write(test)
     # 테스트결과 pdf파일 크기에 비해 문제수나 선택지가 너무 많으면 오작동함
     # pdf파일이 너무크면 토큰 수 부족
