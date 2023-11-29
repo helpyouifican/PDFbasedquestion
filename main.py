@@ -37,7 +37,8 @@ if uploaded_file is not None:
     #gpt 로드
     gpt = ChatOpenAI(
         model_name="gpt-3.5-turbo-1106",
-        temperature=0
+        temperature=0,
+        model_kwargs={"frequency_penalty": 1.0}
     )
 
     # 프롬프트 엔지니어링 템플릿 n지선다
