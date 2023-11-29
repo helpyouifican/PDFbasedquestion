@@ -32,8 +32,6 @@ def pdf_to_document(uploaded_file):
 if uploaded_file is not None:
     pages = pdf_to_document(uploaded_file)  
     
-    #Hyper parameter
-    st.header("값을 넣어주세요")
     #gpt 로드
     gpt = ChatOpenAI(
         model_name="gpt-3.5-turbo-1106",
